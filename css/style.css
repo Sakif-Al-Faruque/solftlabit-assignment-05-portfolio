@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;;
+}
+
+body{
+    background-color: #EDF2F8;
+}
+
+.container{
+    width: 95%;
+    /* background-color: red; */
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+
+nav{
+    width: 100%;
+    padding: 20px 0;
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.nav-logo-bar{
+    width: 30%;
+}
+.nav-logo-container{
+    width: 100%;
+}
+
+.nav-logo-container .logo{
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 20px 0;
+}
+.nav-logo-container .logo span:first-child{
+    color: #1C1F28;
+}
+.nav-logo-container .logo span:last-child{
+    color: #ACB0B9;
+}
+
+
+
+
+
+
+.nav-links-bar{
+    width: 40%;
+}
+.nav-links-bar ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.nav-links-bar ul li{
+    padding: 20px 0;
+
+}
+.nav-links-bar ul li a{
+    color: #ACB0B9;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.nav-links-bar ul li:hover a{
+    color: #4C4BDC;
+}
+
+
+.nav-mail-bar{
+    width: 30%;
+    text-align: right;
+    font-size: 2rem;
+    color: #4C4BDC;
+}
+
+
+
+
+
+
+.banner{
+    width: 100%;
+}
+.banner-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.banner-left{
+    width: 30%;
+}
+.banner-left .intro{
+    width: 100%;
+    margin: 60px 0;
+}
+.banner-left .intro span{
+    width: 100%;
+    display: block;
+    color: #4C4BDC;
+    font-size: .8rem;
+    font-weight: 800;
+    position: relative;
+}
+.banner-left .intro span::after{
+    content: '';
+    position: absolute;
+    background-color: #4C4BDC;
+    width: 100px;
+    height: 1px;
+    display: block;
+    transform: translateY(-50%);
+    top: 50%;
+    z-index: 1000;
+    left: 120px;
+
+}
+.banner-left h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.banner-left h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+.banner-left .button-container{
+    width: 100%;
+}
+
+.banner-left .button-container span{
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+}
+.banner-left .button-container span:first-child{
+    background-color: #C34373;
+    box-shadow: 0px 0px 15px 2px #C34373;
+}
+.banner-left .button-container span:last-child{
+    background-color: #4C4BDC;
+    box-shadow: 0px 0px 15px 2px #4C4BDC;
+}
+.banner-left .button-container span a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+
+
+.banner-right{
+    width: 70%;
+}
+
+.banner-img-container{
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 50%;
+}
+.banner-text{
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    width: 230px;
+}
+.banner-text span{
+    background: linear-gradient(180deg, rgba(237,242,248,1) 30%, rgba(161,161,161,1) 95%);
+    display: inline-block;
+    padding: 7px 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.banner-text h5{
+    font-size: .8rem;
+    color: #1C1F28;
+}
+.banner-text h5:last-child{
+    color: #ACB0B9;
+}
+
+
+
+.banner-img{
+    background: linear-gradient(180deg, rgba(237,242,248,1) 70%, rgba(161,161,161,1) 95%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: none;
+}
+.banner-img::before{
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    background-color: #C34373;
+    top: 50%;
+    left: -10%;
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+
+}
+.banner-img::after{
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    background-color: #4C4BDC;
+    top: 60%;
+    right: -10%;
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+
+}
+.banner-img img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    padding: 30px 0;
+    /* background-color: aqua; */
+}
+.footer-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+.footer-left{
+    width: 400px;
+}
+.footer-left ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.footer-left ul li{
+    margin-right: 15px;
+    display: inline-block;
+}
+.footer-left ul li a{
+    text-decoration: none;
+    color: #ACB0B9;
+    font-size: 1rem;
+}
+
+.footer-right{
+    width: 300px;
+    text-align: right;
+}
+.footer-right p{
+    color: #ACB0B9;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 879px){
+    .nav-logo-bar{
+        width: 100%;
+    }
+
+    .nav-logo-container .logo{
+        width: 140px;
+        margin: 0 auto;
+
+    }
+
+    .nav-links-bar{
+        width: 100%;
+    }
+    .nav-links-bar ul li{
+        text-align: center;
+        width: 100%;
+        padding: 20px 0;
+    
+    }
+    .nav-mail-bar{
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .banner-left,
+    .banner-right{
+        width: 100%;
+    }
+
+
+    .banner-left .intro{
+        text-align: center;
+    }
+    .banner-left .intro span{
+        width: 300px;
+        display: inline-block;
+    }
+    .banner-left .intro span::after{
+        left: calc(100% - 70px); 
+    }
+    .banner-left h1,
+    .banner-left h2,
+    .banner-left .button-container{
+        text-align: center;
+    }
+
+
+    .banner-text{
+        position: absolute;
+        top: 20%;
+        left: 70%;
+        width: 100px;
+    }
+
+
+    .banner-img::before{
+        left: 0%;
+    }
+    .banner-img::after{
+        right: 0%;
+    }
+    
+
+
+
+
+    .footer-left,
+    .footer-right{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-left ul li{
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+
